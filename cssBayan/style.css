@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main-page-container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 900px;
+  margin-top: 100px;
+}
+
+.massage-container {
+  width: 100%;
+  height: 30px;
+  background-color: brown;
+  margin-top: 20px;
+}
+
+.massage-container p {
+  padding: 4px 4px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: slategrey;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
