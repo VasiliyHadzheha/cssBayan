@@ -9,6 +9,12 @@ body {
   justify-content: center;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
 .main-page-container {
   display: flex;
   flex-direction: column;
@@ -18,10 +24,17 @@ body {
 }
 
 .massage-container {
+  display: block;
   width: 100%;
   height: 30px;
   background-color: brown;
   margin-top: 20px;
+  cursor: pointer;
+  transition: background .2s ease-out;
+}
+
+.massage-container:hover {
+  background-color: blanchedalmond;
 }
 
 .massage-container p {
@@ -34,4 +47,15 @@ body {
   background-color: slategrey;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.faq-input {
+  appearance: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.faq-input + img {
+  display: block;
 }
