@@ -13,6 +13,8 @@ img {
   width: 100%;
   height: 100%;
   display: none;
+  transition: all .4s ease-out;
+
 }
 
 .main-page-container {
@@ -23,14 +25,20 @@ img {
   margin-top: 100px;
 }
 
+.title {
+  font-family: Tilt Neon;
+}
+
 .massage-container {
   display: block;
   width: 100%;
   height: 30px;
   background-color: brown;
   margin-top: 20px;
+  padding: 5px 5px;
   cursor: pointer;
   transition: background .2s ease-out;
+  font-family: Tilt Neon;
 }
 
 .massage-container:hover {
@@ -49,13 +57,21 @@ img {
   margin-bottom: 5px;
 }
 
-.faq-input {
+.container-input {
   appearance: none;
   position: absolute;
   width: 0;
   height: 0;
 }
 
-.faq-input + img {
+.container-input:hover + img {
   display: block;
+}
+
+
+
+
+@font-face {
+  font-family: 'Tilt Neon';
+  src: url(/cssBayan/fonts/TiltNeon-Regular.ttf);
 }
