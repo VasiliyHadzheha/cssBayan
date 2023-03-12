@@ -88,7 +88,7 @@ img {
 }
 
 .main-page-container:hover .arrow-btn {
-  background: url('/cssBayan/public/arrow.svg') center/cover no-repeat;
+  background: url('./cssBayan/public/arrow.svg') center/cover no-repeat;
 }
 
 @media screen and (max-width: 1920px) {
@@ -126,7 +126,7 @@ img {
 
 @font-face {
   font-family: 'Tilt Neon';
-  src: url(/cssBayan/fonts/TiltNeon-Regular.ttf);
+  src: url(./cssBayan/fonts/TiltNeon-Regular.ttf);
 }
 
 
