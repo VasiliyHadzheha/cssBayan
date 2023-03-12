@@ -7,14 +7,13 @@
 body {
   display: flex;
   justify-content: center;
+  background-color: bisque;
 }
 
 img {
-  width: 100%;
-  height: 100%;
-  display: none;
-  transition: all .4s ease-out;
-
+  width: 0;
+  height: 0;
+  transition: all .2s ease-out;
 }
 
 .main-page-container {
@@ -26,19 +25,27 @@ img {
 }
 
 .title {
+  font-size: 50px;
   font-family: Tilt Neon;
 }
 
 .massage-container {
   display: block;
-  width: 100%;
-  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
   background-color: brown;
+  border-radius: 7px;
   margin-top: 20px;
   padding: 5px 5px;
   cursor: pointer;
   transition: background .2s ease-out;
   font-family: Tilt Neon;
+  font-size: 26px;
+}
+
+.main-page-container img {
+  margin: 0 auto;
 }
 
 .massage-container:hover {
@@ -59,19 +66,68 @@ img {
 
 .container-input {
   appearance: none;
-  position: absolute;
   width: 0;
   height: 0;
 }
 
 .container-input:hover + img {
   display: block;
+  width: 50%;
+  height: 50%;
 }
 
+.arrow-btn {
+  width: 14px;
+  height: 14px;
+  margin-right: 0.9rem;
+  transition: all 0.3s;
+}
 
+.massage-container:hover .arrow-btn {
+  transform: rotate(-180deg);
+}
 
+.main-page-container:hover .arrow-btn {
+  background: url('/cssBayan/public/arrow.svg') center/cover no-repeat;
+}
+
+@media screen and (max-width: 1920px) {
+
+}
+
+@media screen and (max-width: 820px) {
+  .title {
+    font-size: 30px;
+  }
+  .massage-container {
+    height: 40px;
+    font-size: 20px;
+  }
+  .container-input:hover + img {
+    display: block;
+    width: 40vh;
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .title {
+    font-size: 20px;
+  }
+  .massage-container {
+    height: 20px;
+    font-size: 13px;
+  }
+  .container-input:hover + img {
+    display: block;
+    width: 20vh;
+    height: 20vh;
+  }
+}
 
 @font-face {
   font-family: 'Tilt Neon';
   src: url(/cssBayan/fonts/TiltNeon-Regular.ttf);
 }
+
+
